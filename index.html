@@ -16,56 +16,65 @@
             </ul>
         </nav>
     </header>
-    <h2>Blog</h2>
-    <article>
-        <h3>The Newest Developed Feature in SauceLore: Shops</h3>
-        <time datetime="2024-10-13" title="October 13th, 2024">10/13/24</time>
-        <address class="author">By <a rel="author" href="/about.html">Luke Marchand</a></address>
-        <table>
-            <tr>
-                <th>Shop Location</th>
-                <th>Shopkeeper</th>
-                <th>Specialty Item</th>
-            </tr>
-            <tr>
-                <td>Daanco City</td>
-                <td>Ex-Guard</td>
-                <td>Cozy Socks</td>
-            </tr>
-            <tr>
-                <td>Astralton</td>
-                <td>Old Wizard</td>
-                <td>Light Cloak</td>
-            </tr>
-            <tr>
-                <td>Veloxaville</td>
-                <td>Tiramisu Girl</td>
-                <td>Tiramisu</td>
-            </tr>
-            <tr>
-                <td>Defenchi</td>
-                <td>Shy Forest Girl</td>
-                <td>Clarity Pendant</td>
-            </tr>
-            <tr>
-                <td>Secret Location</td>
-                <td>???</td>
-                <td>???</td>
-            </tr>
-        </table>
-        <img src="images/sauceshopreal.png" alt="SauceLore shop menu screenshot">
-        <p>
-            SauceLore is a video game that I am creating for Windows and hopefully Mac. I am still adding new things to the game, but I am getting close to being done. The newest thing I’ve added to my game is the shop system. SauceLore is an RPG with turn-based combat, and players can bring different items with different effects into battles. There are a few ways to obtain these items, and now players can buy them from shops in the game world. There are 5 shops in the games, each with unique items that they sell. 4 of the shops are located in the game world’s towns, and one of the shops is in a secret location for players to find. Each shop has a unique shopkeeper with a unique personality from the other shopkeepers. The shopkeepers sell different things based on these personalities and how early they can be accessed from within the context of the game’s story. Players can use money they earn from defeating enemies to buy these items from the shops. They can also sell items that they do not want anymore to the shops for a bit of money back in order to buy things that they do want.
-        </p>
-    </article>
-    <article>
-        <h3>The Dangers of Public Variables</h3>
-        <time datetime="2024-10-13" title="October 13th, 2024">10/13/24</time>
-        <address class="author">By <a rel="author" href="/about.html">Luke Marchand</a></address>
-        <img src="images/mycode.png" alt="A C-Sharp class declaration with public variable declarations">
-        <p>
-            I really like using public variables. It feels so much more simple to allow myself to just use variables where I need them by exposing them. I still think this is fine when working on a project alone. However, exposing your variables like this can lead to messy and unmanageable code very quickly. This is something I have learned the hard way. My main issue that I constantly run into with public variables is when I begin to change them in too many different places. Oftentimes, I think it’s okay to simply update a value when necessary, but it soon becomes more complicated than that. One example might be updating a health value in a game. If this enemy hits the player, the enemy changes the player's health variable to reflect how much damage was dealt. And then a fire attack also does the same thing from its own script. The health variable works and is updated correctly, but so much control is lost when this health script is public like that. How do you update the visual health bar every time the health is lost? How do you play a hurt sound effect every time the player loses health? Changing health to a private variable that is updated in a public function would solve this issue. Now the fire attack and enemy hit don’t update the variable themselves, but instead call the healthUpdate function. Now that one function is the only spot the health is actually updated, so you can add other things there like playing sounds or updating visuals.
-        </p>
-    </article>
+    <section id="blog">
+        <article class="blog-post">
+            <h2>The Newest Developed Feature in SauceLore: Shops</h2>
+            <time datetime="2024-10-13" title="October 13th, 2024">10/13/24</time>
+            <address class="author">By <a rel="author" href="/about.html">Luke Marchand</a></address>
+            <table>
+                <tr>
+                    <th>Shop Location</th>
+                    <th>Shopkeeper</th>
+                    <th>Specialty Item</th>
+                </tr>
+                <tr>
+                    <td>Daanco City</td>
+                    <td>Ex-Guard</td>
+                    <td>Cozy Socks</td>
+                </tr>
+                <tr>
+                    <td>Astralton</td>
+                    <td>Old Wizard</td>
+                    <td>Light Cloak</td>
+                </tr>
+                <tr>
+                    <td>Veloxaville</td>
+                    <td>Tiramisu Girl</td>
+                    <td>Tiramisu</td>
+                </tr>
+                <tr>
+                    <td>Defenchi</td>
+                    <td>Shy Forest Girl</td>
+                    <td>Clarity Pendant</td>
+                </tr>
+                <tr>
+                    <td>Secret Location</td>
+                    <td>???</td>
+                    <td>???</td>
+                </tr>
+            </table>
+            <img src="images/sauceshopreal.png" alt="SauceLore shop menu screenshot">
+            <p>
+                SauceLore is a video game that I am creating for Windows and hopefully Mac. I am still adding new things to the game, but I am getting close to being done. The newest thing I’ve added to my game is the shop system. SauceLore is an RPG with turn-based combat, and players can bring different items with different effects into battles. There are a few ways to obtain these items, and now players can buy them from shops in the game world. There are 5 shops in the games, each with unique items that they sell. 4 of the shops are located in the game world’s towns, and one of the shops is in a secret location for players to find. Each shop has a unique shopkeeper with a unique personality from the other shopkeepers. The shopkeepers sell different things based on these personalities and how early they can be accessed from within the context of the game’s story. Players can use money they earn from defeating enemies to buy these items from the shops. They can also sell items that they do not want anymore to the shops for a bit of money back in order to buy things that they do want.
+            </p>
+        </article>
+        <article class="blog-post">
+            <h2>The Dangers of Public Variables</h2>
+            <time datetime="2024-10-13" title="October 13th, 2024">10/13/24</time>
+            <address class="author">By <a rel="author" href="/about.html">Luke Marchand</a></address>
+            <img src="images/mycode.png" alt="A C-Sharp class declaration with public variable declarations">
+            <p>
+                I really like using public variables. It feels so much more simple to allow myself to just use variables where I need them by exposing them. I still think this is fine when working on a project alone. However, exposing your variables like this can lead to messy and unmanageable code very quickly. This is something I have learned the hard way. My main issue that I constantly run into with public variables is when I begin to change them in too many different places. Oftentimes, I think it’s okay to simply update a value when necessary, but it soon becomes more complicated than that. One example might be updating a health value in a game. If this enemy hits the player, the enemy changes the player's health variable to reflect how much damage was dealt. And then a fire attack also does the same thing from its own script. The health variable works and is updated correctly, but so much control is lost when this health script is public like that. How do you update the visual health bar every time the health is lost? How do you play a hurt sound effect every time the player loses health? Changing health to a private variable that is updated in a public function would solve this issue. Now the fire attack and enemy hit don’t update the variable themselves, but instead call the healthUpdate function. Now that one function is the only spot the health is actually updated, so you can add other things there like playing   sounds or updating visuals.
+            </p>
+        </article>
+    </section>
+    <section>
+        <form>
+            <label>Sign up for our newsletter:
+                <input type="text">
+            </label>
+            <button>Subscribe</button>
+        </form>
+    </section>
 </body>
 </html>

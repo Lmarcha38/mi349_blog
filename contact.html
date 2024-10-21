@@ -8,14 +8,19 @@
 <body>
     <header>
         <h1>Luke Marchand's MI349 Blog</h1>
+        <nav>
+            <ul>
+                <li><a title="Home Page" href="/index.html">Blog</a></li>
+                <li><a title="About Page" href="/about.html">About</a></li>
+                <li><a title="Contact Page" href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a title="Home Page" href="/index.html">Blog</a></li>
-            <li><a title="About Page" href="/about.html">About</a></li>
-            <li><a title="Contact Page" href="/contact.html">Contact</a></li>
-        </ul>
-    </nav>
     <h2>Contact</h2>
+    <form name="sub" method="post" action="/">
+        <p><label for="email">Email</label><br />
+        <input type="email" name="email"/></p>
+        <p><input type="submit" /></p>
+    </form>
 </body>
 </html>

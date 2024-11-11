@@ -29,7 +29,7 @@ p {
 
 #blog {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 .blog-post {

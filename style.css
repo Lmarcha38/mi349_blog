@@ -25,7 +25,6 @@ h3 {
 
 p {
     line-height: 1.4em;
-    white-space: pre-line;
 }
 
 #blog {
@@ -59,7 +58,7 @@ li {
 }
 
 table {
-    padding: 10px;
+    padding-top: 10px;
 }
 
 th {
@@ -72,15 +71,24 @@ td {
 }
 
 img {
-    width: 100%;
-    padding-top: 10px
+    width: 50%;
+    padding-top: 10px;
 }
 
 a[rel="author"] {
     color: #242424;
-    
 }
 
 .meimg {
-    width: 40%;
+    width: 30%;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    white-space: pre-line;
+}
+
+time {
+    font-weight: bold;
 }

@@ -80,7 +80,10 @@ a[rel="author"] {
 }
 
 .meimg {
-    width: 30%;
+    float: left;
+    height: 300px;
+    width: auto;
+    margin-right: 10px;
 }
 
 .contact {

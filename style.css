@@ -1,14 +1,14 @@
 html {
-    background: #e3e3e3;
+    background: #9DB2BF;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 40px;
     padding: 40px;
-    color: #242424;
-    border-top: 10px solid #242424;
-    background: #fff
+    color: #27374D;
+    border-top: 10px solid #27374D;
+    background: #DDE6ED
 }
 
 h1 {
@@ -33,14 +33,14 @@ p {
 }
 
 .blog-post {
-    border-bottom: 2px dotted #ccc;
+    border-bottom: 2px dotted #526d82;
 }
 
 header {
     position: sticky;
     top: 0;
-    background: #fff;
-    border-bottom: 2px dotted #ccc;
+    background: #DDE6ED;
+    border-bottom: 2px dotted #526d82;
 }
 
 ul {
@@ -62,11 +62,11 @@ table {
 }
 
 th {
-    border: 2px solid #242424;
+    border: 2px solid #27374D;
 }
 
 td {
-    border: 1px solid #242424;
+    border: 1px solid #27374D;
     padding-right: 10px;
 }
 
@@ -76,7 +76,7 @@ img {
 }
 
 a[rel="author"] {
-    color: #242424;
+    color: #27374D;
 }
 
 .meimg {
